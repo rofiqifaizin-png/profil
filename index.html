@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Rofiqi Adyata Faizin</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- SCROLL PROGRESS BAR -->
+  <div class="scroll-bar" id="scrollBar"></div>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#hero">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#work">WORK</a></li>
+        <li><a href="#skill">PRESENTAGE</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-sun" id="themeIcon"></i>
+      </button>
+      <div class="social-icons">
+        <a href="https://www.tiktok.com/@ropekkerenabiz?is_from_webapp=1&sender_device=pc" target="_blank"><i
+            class="fab fa-tiktok"></i></a>
+        <a href="https://wa.me/6283841013967/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/izx.n00?igsh=c3o2YXRyd3h2ODEy" target="_blank"><i
+            class="fab fa-instagram"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main class="hero" id="hero">
+    <div class="hero-content">
+      <span class="badge">HELLO IM</span>
+      <h1>ROFIQI ADYATA <br />FAIZIN</h1>
+      <p class="hero-tagline">Junior Front-end Developer &amp; Game Dev Student</p>
+      <div class="cta-buttons">
+        <a href="https://docs.google.com/document/d/1ugUnYW1vORLWPS42mgRawmmGQ0JrorAN/edit?usp=drive_link&ouid=106035552657596905726&rtpof=true&sd=true"
+          target="_blank" class="btn btn-red">EXPERIENCE</a>
+        <a href="#contact" class="btn btn-white">CHAT ME</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="ring ring-a"></div>
+      <div class="ring ring-b"></div>
+      <div class="ring ring-c"></div>
+      <img src="hero.png" alt="3D Icon" />
+    </div>
+  </main>
+
+  <!-- BENTO -->
+  <section class="bento-shortcut" data-aos="fade-up">
+    <div class="bento-container">
+      <a href="#work" style="display:contents ;">
+        <div class="bento-item cyber-card">
+          <span class="bento-scan-line"></span>
+          <div class="inner-content">
+            <i class="fas fa-code"></i>
+            <span>WORK</span>
+          </div>
+        </div>
+      </a>
+      <a href="#skill" style="display: contents;">
+        <div class="bento-item cyber-card">
+          <span class="bento-scan-line"></span>
+          <div class="inner-content">
+            <i class="fas fa-layer-group"></i>
+            <span>PRESENTATION</span>
+          </div>
+        </div>
+      </a>
+      <a href="#contact" style="display: contents;">
+        <div class="bento-item cyber-card">
+          <span class="bento-scan-line"></span>
+          <div class="inner-content">
+            <i class="fas fa-envelope"></i>
+            <span>CONTACT</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+    <div class="container-about">
+
+      <div class="about-text" data-aos="fade-right">
+        <h2 class="title-red">ABOUT</h2>
+        <p>
+          Hi there! I am a passionate
+          <span class="highlight-red">Junior Front-end Developer</span>
+          currently pursuing a degree in Software and Game Development.
+        </p>
+      </div>
+
+      <div class="about-image" data-aos="zoom-in" data-aos-delay="200">
+        <div class="image-wrapper">
+          <img src="abot.png" alt="Rofiqi Default" class="img-default" />
+          <img src="abot2.png" alt="Rofiqi Hover" class="img-hover" />
+        </div>
+      </div>
+
+      <div class="about-details" data-aos="fade-left" data-aos-delay="300">
+        <div class="info-box">
+          <span class="label-red">Name</span>
+          <p>Rofiqi Adyata Faizin</p>
+        </div>
+        <div class="info-box">
+          <span class="label-red">Address</span>
+          <p>Jln.Bakalrejo, Kec.Susukan</p>
+        </div>
+        <div class="info-box">
+          <span class="label-red">Place/date of birth</span>
+          <p>Manado/17 January 2010</p>
+        </div>
+        <a href="https://docs.google.com/document/d/1ugUnYW1vORLWPS42mgRawmmGQ0JrorAN/edit?usp=drive_link&ouid=106035552657596905726&rtpof=true&sd=true"
+          target="_blank" class="btn btn-red about-btn">EXPERIENCE</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <div class="container-skills" id="skill">
+    <h2 class="skills-title" data-aos="fade-down">MY <span class="text-red">SKILL</span></h2>
+
+    <div class="skills-wrapper">
+      <div class="skill-item skill-left" data-aos="fade-right">
+        <p class="skill-name">HTML (HyperText Markup Language)</p>
+        <div class="bar-container">
+          <div class="progress-bar">
+            <div class="progress-fill" style="--w:90%"></div>
+          </div>
+          <span class="pct-tag">90%</span>
+        </div>
+      </div>
+      <div class="skill-item skill-right" data-aos="fade-left">
+        <p class="skill-name">CSS (Cascading Style Sheet)</p>
+        <div class="bar-container">
+          <span class="pct-tag">80%</span>
+          <div class="progress-bar">
+            <div class="progress-fill" style="--w:80%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-item skill-left" data-aos="fade-right" data-aos-delay="100">
+        <p class="skill-name">BOOTSTRAP</p>
+        <div class="bar-container">
+          <div class="progress-bar">
+            <div class="progress-fill" style="--w:60%"></div>
+          </div>
+          <span class="pct-tag">60%</span>
+        </div>
+      </div>
+      <div class="skill-item skill-right" data-aos="fade-left" data-aos-delay="100">
+        <p class="skill-name">JS (JavaScript)</p>
+        <div class="bar-container">
+          <span class="pct-tag">40%</span>
+          <div class="progress-bar">
+            <div class="progress-fill" style="--w:40%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-item skill-left" data-aos="fade-right" data-aos-delay="200">
+        <p class="skill-name">Tailwind</p>
+        <div class="bar-container">
+          <div class="progress-bar">
+            <div class="progress-fill" style="--w:50%"></div>
+          </div>
+          <span class="pct-tag">50%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-wrapper">
+      <div class="icon-track" id="skillSlider">
+        <div class="icon-card glass-card" style="--ci:0"><img src="tailwind.png" alt="Tailwind"></div>
+        <div class="icon-card glass-card" style="--ci:1"><img src="bo.png" alt="Bootstrap"></div>
+        <div class="icon-card glass-card featured" style="--ci:2"><img src="html.png" alt="HTML"></div>
+        <div class="icon-card glass-card" style="--ci:3"><img src="css.png" alt="CSS"></div>
+        <div class="icon-card glass-card" style="--ci:4"><img src="java.png" alt="JS"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio-section" id="work">
+    <div class="container-portfolio">
+      <h2 class="title-red" style="text-align:center;margin-bottom:10px;color:#fff;" data-aos="fade-down">MY PORTFOLIO
+      </h2>
+      <p class="port-sub" data-aos="fade-up">Berikut adalah beberapa proyek yang telah saya kembangkan.</p>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-card" data-aos="fade-up">
+          <div class="card-bg-glow"></div>
+          <div class="card-body">
+            <span class="card-corner tl"></span><span class="card-corner tr"></span>
+            <span class="card-corner bl"></span><span class="card-corner br"></span>
+            <img src="Cuplikan layar 2026-05-15 082759.png" alt="Space Project">
+            <div class="card-content">
+              <h3>Kelola Sampah Selamatkan Bumi</h3>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-bg-glow"></div>
+          <div class="card-body">
+            <span class="card-corner tl"></span><span class="card-corner tr"></span>
+            <span class="card-corner bl"></span><span class="card-corner br"></span>
+            <img src="port2.png" alt="Sistem Manajemen Siswa">
+            <div class="card-content">
+              <h3>Sistem Manajemen Siswa</h3>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-bg-glow"></div>
+          <div class="card-body">
+            <span class="card-corner tl"></span><span class="card-corner tr"></span>
+            <span class="card-corner bl"></span><span class="card-corner br"></span>
+            <img src="port3.png" alt="Edukasi Untuk Perubahan">
+            <div class="card-content">
+              <h3>Edukasi Untuk Perubahan</h3>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="card-bg-glow"></div>
+          <div class="card-body">
+            <span class="card-corner tl"></span><span class="card-corner tr"></span>
+            <span class="card-corner bl"></span><span class="card-corner br"></span>
+            <img src="port4.png" alt="Beyond The Naked Eye">
+            <div class="card-content">
+              <h3>Beyond The Naked Eye</h3>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="card-bg-glow"></div>
+          <div class="card-body">
+            <span class="card-corner tl"></span><span class="card-corner tr"></span>
+            <span class="card-corner bl"></span><span class="card-corner br"></span>
+            <img src="port5.png" alt="Pet Care">
+            <div class="card-content">
+              <h3>Pet Care and Supplies</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="contact-wrapper">
+      <h2 class="title-red contact-heading" data-aos="fade-down">
+        CONTACT <span style="color:#fff">ME</span>
+      </h2>
+
+      <div class="contact-card-wrap">
+        <div class="scene" id="scene">
+          <div class="card-flip" id="cardFlip">
+
+            <!-- FRONT -->
+            <div class="face face-front">
+              <div class="contact-scan-stripe"></div>
+              <img class="front-photo" src="card.jpeg" alt="Rofiqi"
+                onerror="this.style.display='none';document.getElementById('ph').style.display='flex'">
+              <div class="photo-placeholder" id="ph" style="display:none">RA</div>
+              <div class="front-info">
+                <span class="contact-name">ROFIQI ADYATA FAIZIN</span>
+                <span class="contact-role">Junior Front-end Developer</span>
+              </div>
+              <ul class="contact-socials">
+                <li>
+                  <a href="https://www.tiktok.com/@ropekkerenabiz" target="_blank"
+                    style="display:contents;color:inherit;">
+                    <i class="fab fa-tiktok"></i> @ropekkerenabiz
+                  </a>
+                </li>
+                <li>
+                  <a href="https://wa.me/6283841013967" target="_blank" style="display:contents;color:inherit;">
+                    <i class="fab fa-whatsapp"></i> +6283841013967
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/izx.n00" target="_blank" style="display:contents;color:inherit;">
+                    <i class="fab fa-instagram"></i> @izx.n00
+                  </a>
+                </li>
+              </ul>
+              <div class="flip-hint">▸ KLIK UNTUK SEND MESSAGE ▸</div>
+            </div>
+
+            <!-- BACK -->
+            <div class="face face-back">
+              <div class="back-inner">
+                <div class="form-head">Send Message</div>
+                <div class="f-group">
+                  <input type="text" class="f-input" placeholder="Your Name">
+                </div>
+                <div class="f-group">
+                  <input type="email" class="f-input" placeholder="Email Address">
+                </div>
+                <div class="f-group">
+                  <textarea class="f-input f-textarea" placeholder="Type your message here..."></textarea>
+                </div>
+                <button class="send-btn" onclick="window.open('https://wa.me/6283841013967', '_blank')">SEND</button>
+                <div class="back-hint">▸ KLIK UNTUK KEMBALI ▸</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="quote-section" data-aos="fade-up">
+    <div class="quote-inner">
+      <div class="quote-photo-wrap">
+        <img src="david goggins.jpg" alt="Rofiqi" class="quote-photo">
+        <div class="quote-ring"></div>
+      </div>
+      <blockquote class="quote-text">
+        <span class="quote-mark open">"</span>
+        Don't stop when you're tired.<br>Stop when you're done.
+        <span class="quote-mark close">"</span>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col" data-aos="fade-up">
+        <h4 class="footer-heading footer-heading-red">Location</h4>
+        <div class="footer-map-embed">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3956.4627424196483!2d110.62692017218306!3d-7.413927497063386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMjQnNDkuOCJTIDExMMKwMzcnNDYuMiJF!5e0!3m2!1sid!2sid!4v1778762927012!5m2!1sid!2sid"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" width="100%" height="160"
+            style="border:0; border-radius:10px; filter:grayscale(100%) invert(90%);" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <p class="footer-map-label">
+            <i class="fas fa-map-marker-alt"></i>
+            Kec. Susukan, Jawa Tengah
+          </p>
+        </div>
+      </div>
+      <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+        <h4 class="footer-heading footer-heading-red">Social</h4>
+        <ul class="footer-links">
+          <li>
+            <a href="https://www.tiktok.com/@ropekkerenabiz?is_from_webapp=1&sender_device=pc" target="_blank"><i
+                class="fab fa-tiktok"></i> </a>Tiktok
+          </li>
+          <li><a href="https://wa.me/6283841013967/" target="_blank"><i class="fab fa-whatsapp"></i> </a> Whatsapp</li>
+          <li><a href="https://www.instagram.com/izx.n00?igsh=c3o2YXRyd3h2ODEy" target="_blank"><i
+                class="fab fa-instagram"></i> </a>Instagram</li>
+        </ul>
+      </div>
+      <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+        <h4 class="footer-heading footer-heading-red">Sosial</h4>
+        <p class="footer-email">Rofiqifaizin<br>@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>©2026 (ROFIQI PORTOFOLIO) — ALL RIGHT RESERVED</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
