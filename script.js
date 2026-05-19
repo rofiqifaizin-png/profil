@@ -1,5 +1,34 @@
 // ini inisialisasi AOS
 AOS.init({ once: true, duration: 800 });
+/* ============================================================
+   ADD THIS TO THE END OF script.js
+   ============================================================ */
+
+// ── Hamburger menu ──────────────────────────────────────────
+(function () {
+  const hamburger = document.getElementById('hamburger');
+  const navLinks  = document.querySelector('.nav-links');
+  const socials   = document.querySelector('.social-icons');
+
+  if (!hamburger) return;
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('open');
+    socials.classList.toggle('open');
+  });
+
+  // Close menu when a nav link is clicked
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navLinks.classList.remove('open');
+      socials.classList.remove('open');
+    });
+  });
+})();
+
+
 
 // ini theme toggle
 document.getElementById('themeToggle').addEventListener('click', () => {
