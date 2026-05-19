@@ -1,8 +1,5 @@
 // ini inisialisasi AOS
 AOS.init({ once: true, duration: 800 });
-/* ============================================================
-   ADD THIS TO THE END OF script.js
-   ============================================================ */
 
 // ── Hamburger menu ──────────────────────────────────────────
 (function () {
@@ -31,11 +28,16 @@ AOS.init({ once: true, duration: 800 });
 
 
 // ini theme toggle
-document.getElementById('themeToggle').addEventListener('click', () => {
-  document.body.classList.toggle('light');
-  const isLight = document.body.classList.contains('light');
-  document.getElementById('themeIcon').className = isLight ? 'fas fa-moon' : 'fas fa-sun';
-});
+const themeIcon = document.getElementById('themeIcon');
+
+document.getElementById('themeToggle')
+  .addEventListener('click', () => {
+    document.body.classList.toggle('light');
+    const isLight = document.body.classList.contains('light');
+    themeIcon.src = isLight
+      ? 'icon-light.png'   // tampil saat mode TERANG
+      : 'icon-dark.png';    // tampil saat mode GELAP
+  });
 
 // ini scroll progress bar
 window.addEventListener('scroll', () => {
