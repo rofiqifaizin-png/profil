@@ -242,7 +242,7 @@ body.light iframe {
   }
 }
 
-h1 {
+.namaawal {
   font-size: 4rem;
   font-weight: 900;
   line-height: 1.1;
@@ -253,7 +253,22 @@ h1 {
   overflow: hidden;
   border-right: 4px solid #ff0000;
   width: 0;
-  animation: typing 3.5s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
+  animation: typing 3.5s steps(30, end) forwards, blink-caret 0.75s step-end;
+}
+
+.namabelakang {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid transparent;
+  width: 0;
+  animation: typing2 2.5s steps(30, end) 3.5s forwards,
+    blink-caret 0.75s step-end 3.5s;
 }
 
 @keyframes typing {
@@ -261,11 +276,32 @@ h1 {
     width: 0;
   }
 
+  99% {
+    width: 100%;
+    border-right: 4px solid #ff0000;
+  }
+
   to {
     width: 100%;
+    border-right: none;
   }
 }
 
+@keyframes typing2 {
+  from {
+    width: 0;
+  }
+
+  99% {
+    width: 50%;
+    border-right: 4px solid #ff0000;
+  }
+
+  to {
+    width: 50%;
+    border-right: none;
+  }
+}
 @keyframes blink-caret {
 
   from,
